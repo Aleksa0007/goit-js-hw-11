@@ -14,7 +14,13 @@ export function refreshUI(images) {
     .map((image) => 
         `<li class="gallery-item">
             <a class="gallery-link" href="${image["largeImageURL"]}">
-                <img class="gallery-image" src="${image["webformatURL"]}" alt="${image["tags"]}" />
+                <img class="gallery-image" src="${image["webformatURL"]}" alt="${image["tags"]}" width=""/>
+                <div class="small-container">
+                <p>Likes <span>${image["likes"]}</span></p>
+                <p>Views <span>${image["views"]}</span></p>
+                <p>Comments <span>${image["comments"]}</span></p>
+                <p>Downloads <span>${image["downloads"]}</span></p>
+                </div>
             </a>
         </li>`)
     .join("");

@@ -7,7 +7,6 @@ import { refreshUI } from "./js/render-function.js";
 
 
 const form = document.querySelector(`form`);
-// const button = document.querySelector(`button`);
 
 form.addEventListener("submit", event => {
     event.preventDefault();
